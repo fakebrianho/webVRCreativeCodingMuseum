@@ -29,17 +29,20 @@
         </a-asset>
 
         <!-- Ceiling -->
-        <a-plane src="#wallTextures1" repeat='5 4' height="40" width="30" position='0 4 -20' rotation='90 0 0'></a-plane>
+        <a-plane src="#wallTextures1" repeat="5 4" height="40" width="30" position="0 4 2.83" rotation="90 0 0" material="" geometry="height: 90; width: 90"></a-plane>
+        <!-- <a-plane src="#wallTextures1" repeat='5 4' height="40" width="30" position='0 4 -20' rotation='90 0 0'></a-plane> -->
 
         <!-- Floor -->
-        <a-plane src="#woodFloorTextures" repeat='5 4' height="120" width="30" position='0 0 6.233' rotation='-90 0 0'></a-plane>
-        
+        <a-plane src="#woodFloorTextures" repeat='10 20' height="120" width="30" position='0 0 6.233' rotation='-90 0 0'></a-plane>
+        <a-plane src="#woodFloorTextures" repeat="5 4" height="40" width="50" position="30 0 2.863" rotation="-90 0 0" material="" geometry="height: 30; width: 30"></a-plane>
+        <a-plane src="#woodFloorTextures" repeat="5 4" height="40" width="50" position="-30 0 2.863" rotation="-90 0 0" material="" geometry="height: 30; width: 30"></a-plane>
+
         <!-- octagonHall 1-->
         <a-box static-body id='leftSideWall' src='#wallTextures1' height='4' width='5.5' depth='0.04'  position="-2.750 2 -39.98324" rotation="0 0 0"></a-box>
         <a-box static-body id="rightSideWall" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="2.75 2 -39.98324" rotation="" material="" geometry=""></a-box>
-        <a-box static-body id="leftSideWall2" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-5.5 2 -5.24618" rotation="0 90 0" material="" geometry=""></a-box>
+        <a-box static-body id="leftSideWall2" src="#wallTextures1" height="4" width="5.250" depth="0.04" position="-5.5 2 -5.381" rotation="0 90 0" material="" geometry=""></a-box>
         <a-box static-body id="leftSideWall3" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-5.5 2 -10.73937" rotation="0 90 0" material="" geometry=""></a-box>
-        <a-box static-body id="rightSideWall2" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="5.5 2 -5.24618" rotation="0 90 0" material="" geometry=""></a-box>
+        <a-box static-body id="rightSideWall2" src="#wallTextures1" height="4" width="5.250" depth="0.04" position="5.5 2 -5.381" rotation="0 90 0" material="" geometry=""></a-box>
         <a-box static-body id="rightSideWall3" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="5.5 2 -10.73937" rotation="0 90 0" material="" geometry=""></a-box>
         <a-box static-body id="rightSideWall4" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="7.43903 2 -15.41952" rotation="0 45 0" material="" geometry=""></a-box>
         <a-box static-body id="rightSideWall5" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="11.3223 2 -19.30188" rotation="0 45 0" material="" geometry=""></a-box>
@@ -75,38 +78,50 @@
         <a-box static-body="" id="rightSideWall9" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="11.3223 2 39.93245" rotation="0 45 0" material="" geometry=""></a-box>
         
         <!-- Octagon Hall 3 -->
-        <a-box static-body="" id="3leftSideWall1Straight" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-13.75966 2 8.24623" rotation="" material="" geometry=""></a-box>
-        <a-box static-body="" id="3leftSideWall2Straight" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-8.26 2 8.24623" rotation="" material="" geometry=""></a-box>
-        <a-box static-body id="3rightSideWall1Straight" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="5.5 2 11" rotation="0 0 0" material="" geometry=""></a-box>
-        <a-box static-body id="3rightSideWall2Straight" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="5.5 2 16.5" rotation="0 0 0" material="" geometry=""></a-box>
-        <a-box static-body="" id="3leftSideWall" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-42.99868 2 -0.009" rotation="0 90 0" material="" geometry=""></a-box>
+        <a-box static-body="" id="3leftSideWall" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-42.99868 2 0" rotation="0 90 0" material="" geometry=""></a-box>
         <a-box static-body="" id="3rightSideWall" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-42.99868 2 5.5" rotation="0 90 0" material="" geometry=""></a-box>
-        <!-- <a-box static-body id="3rightSideWall" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="2.75 2 45.73" rotation="" material="" geometry=""></a-box> -->
-        <!-- <a-box static-body="" id="3leftSideWall3" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-13.25432 2 29.74937" rotation="0 0 0" material="" geometry=""></a-box> -->
         <a-box static-body="" id="3leftSideWall3" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-32.49597 2 16.01163" rotation="" material="" geometry=""></a-box>
         <a-box static-body="" id="3rightSideWall3" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-32.49597 2 -10.53142" rotation="" material="" geometry=""></a-box>
-        <!-- <a-box static-body="" id="3rightSideWall3" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-32.49597 2 -11.01163" rotation="" material="" geometry=""></a-box> -->
-        <!-- <a-box static-body="" id="3rightSideWall3" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="13.25432 2 29.74937" rotation="0 0 0" material="" geometry=""></a-box> -->
-        <!-- <a-box static-body="" id="3rightSideWall4" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="7.43903 2 21.18" rotation="0 45 0" material="" geometry=""></a-box> -->
-        <!-- <a-box static-body="" id="3rightSideWall5" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="11.31969 2 25.05941" rotation="0 45 0" material="" geometry=""></a-box> -->
-        <!-- <a-box static-body="" id="3leftSideWall4" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-7.43903 2 21.18" rotation="0 -45 0" material="" geometry=""></a-box> -->
-        <!-- <a-box static-body="" id="3rightSideWall4" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-37.1733 2 -14.07251" rotation="0 45 0" material="" geometry=""></a-box> -->
+        <a-box static-body="" id="3rightSideWall49" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-27.00219 2 -10.53142" rotation="" material="" geometry=""></a-box>
         <a-box static-body="" id="3rightSideWall4" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-37.1733 2 -8.5844" rotation="0 45 0" material="" geometry=""></a-box>
         <a-box static-body="" id="3leftSideWall4" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-37.1733 2 14.07251" rotation="0 -45 0" material="" geometry=""></a-box>
-        <!-- <a-box static-body="" id="3leftSideWall5" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-11.31969 2 25.05941" rotation="0 -45 0" material="" geometry=""></a-box> -->
         <a-box static-body="" id="3leftSideWall5" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-41.06198 2 10.18496" rotation="0 -45 0" material="" geometry=""></a-box>
         <a-box static-body="" id="3rightSideWall5" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-41.06198 2 -4.69721" rotation="0 45 0" material="" geometry=""></a-box>
-        <!-- <a-box static-body="" id="3rightSideWall5" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-41.06198 2 -10.18496" rotation="0 45 0" material="" geometry=""></a-box> -->
-        <!-- <a-box static-body="" id="3leftSideWall7" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-13.25489 2 35.25082" rotation="0 0 0" material="" geometry=""></a-box> -->
         <a-box static-body="" id="3leftSideWall7" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-26.995 2 16.01082" rotation="" material="" geometry=""></a-box>
         <a-box static-body="" id="3rightSideWall7" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="13.25489 2 35.25082" rotation="0 0 0" material="" geometry=""></a-box>
-        <a-box static-body="" id="3LeftSideWall72" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="13.25489 2 -10.18496" rotation="0 0 0" material="" geometry=""></a-box>
-        <!-- <a-box static-body="" id="3leftSideWall8" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-7.44652 2 43.80503" rotation="0 -135 0" material="" geometry=""></a-box> -->
+        <a-box static-body="" id="3LeftSideWall72" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-13.7664 2 -2.77784" rotation="" material="" geometry=""></a-box>
+        <a-box static-body="" id="3LeftSideWall73" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-8.2664 2 -2.77784" rotation="" material="" geometry=""></a-box>
         <a-box static-body="" id="3leftSideWall8" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-22.31806 2 14.07189" rotation="0 -135 0" material="" geometry=""></a-box>
-        <!-- <a-box static-body="" id="3leftSideWall9" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-11.3223 2 39.93245" rotation="0 -135 0" material="" geometry=""></a-box> -->
-        <a-box static-body="" id="3rightSideWall8" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="7.44652 2 43.80503" rotation="0 -45 0" material="" geometry=""></a-box>
-        <a-box static-body="" id="3rightSideWall9" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="11.3223 2 39.93245" rotation="0 -45 0" material="" geometry=""></a-box>
+        <a-box static-body="" id="3rightSideWall8" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-22.32531 2 -8.59024" rotation="0 -45 0" material="" geometry=""></a-box>
+        <a-box static-body="" id="3rightSideWall9" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-18.45321 2 -4.7209" rotation="0 -45 0" material="" geometry=""></a-box>
         <a-box static-body="" id="3leftSideWall9" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-18.43376 2 10.18303" rotation="0 -135 0" material="" geometry=""></a-box>
+        <a-box static-body="" id="3leftSideWall1Straight" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-13.75966 2 8.24623" rotation="" material="" geometry=""></a-box>
+        <a-box static-body="" id="3leftSideWall2Straight" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-8.26 2 8.24623" rotation="" material="" geometry=""></a-box>
+        
+        <!-- Octagon 4 -->
+        <a-box static-body="" id="4rightSideWall2Straight" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="8.23048 2 8.22796" rotation="" material="" geometry=""></a-box>
+        <a-box static-body="" id="4rightSideWall1Straight" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="13.72433 2 8.22796" rotation="" material="" geometry=""></a-box>
+        <a-box static-body="" id="4leftSideWall" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="8.23483 2 -2.75" rotation="" material="" geometry=""></a-box>
+        <a-box static-body id="4rightSideWall" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="13.75 2 -2.75" rotation="" material="" geometry=""></a-box>
+        <a-box static-body="" id="4leftSideWall2" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="8.23483 2 -2.75" rotation="" material="" geometry=""></a-box>
+        <a-box static-body id="4rightSideWall2" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="13.75 2 -2.75" rotation="" material="" geometry=""></a-box>
+        <a-box static-body="" id="4rightSideWall3" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="26.98626 2 -10.51177" rotation="" material="" geometry=""></a-box>
+        <a-box static-body="" id="4leftSideWall4" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="32.47105 2 -10.512" rotation="" material="" geometry=""></a-box>   
+        <a-box static-body="" id="4leftSideWall2" src="#wallTextures1" height="4" width="5.250" depth="0.04" position="42.96963 2 5.35648" rotation="0 90 0" material="" geometry=""></a-box>
+        <a-box static-body="" id="4leftSideWall3" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="42.96858 2 -0.00502" rotation="0 90 0" material="" geometry=""></a-box>
+        <a-box static-body="" id="4rightSideWall4" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="18.42842 2 -4.68424" rotation="0 45 0" material="" geometry=""></a-box>
+        <a-box static-body="" id="4rightSideWall5" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="22.31028 2 -8.56951" rotation="0 45 0" material="" geometry=""></a-box>
+        <a-box static-body="" id="4rightSideWall45" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="37.02137 2 13.92834" rotation="0 45 0" material="" geometry="width: 5.9"></a-box>
+        <a-box static-body="" id="4rightSideWall54" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="41.02693 2 9.92839" rotation="0 45 0" material="" geometry=""></a-box>
+        <a-box static-body="" id="4leftSideWall5" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="22.28418 2 14.05634" rotation="0 135 0" material="" geometry=""></a-box>
+        <a-box static-body="" id="4leftSideWall4" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="18.40369 2 10.17142" rotation="0 135 0" material="" geometry=""></a-box>
+        <a-box static-body="" id="4leftSideWall45" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="41.02672 2 -4.69318" rotation="0 135 0" material="" geometry=""></a-box>
+        <a-box static-body="" id="4leftSideWall54" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="37.15045 2 -8.57325" rotation="0 135 0" material="" geometry=""></a-box>
+        <a-box static-body="" id="4leftSideWall32" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="42.96858 2 -0.00502" rotation="0 90 0" material="" geometry=""></a-box>
+        <a-box static-body id="4rightSideWall23" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="13.75 2 -2.75" rotation="" material="" geometry=""></a-box>
+        <a-box static-body="" id="4leftSideWall32" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="32.46768 2 16.00231" rotation="" material="" geometry=""></a-box>
+        <a-box static-body="" id="4rightSideWall23" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="26.97488 2 15.9967" rotation="" material="" geometry=""></a-box>
+        <a-box static-body="" id="4rightSideWall23" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="13.74 2 -2.75" rotation="" material="" geometry="width: 5.53"></a-box>
         <!-- <a-entity
         websurface="url:https://editor.p5js.org/w1tness/sketches/3WMa8_t0G; width:4; height:2;"
         position="2.25 1.5 -4"
