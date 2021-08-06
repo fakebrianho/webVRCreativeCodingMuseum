@@ -2,20 +2,15 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
     <title>Summer Session Creative Coding Museum</title>
-    <!-- <meta name='viewport' content='width=device-width, initial-scale=1'> -->
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src='marbleRoomComponent.js'></script>
-    <!-- <script src='aframe-physics-system.min.js'></script> -->
     <script src="https://unpkg.com/aframe-websurfaces@1.4.0/dist/aframe-websurfaces.umd.js"></script>
-    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
 </head>
 <body>
     <script>
         
     </script>
-    <a-scene>
+    <a-scene stats>
         <a-asset>
             <img id='wallTextures' src='assets/wallImage.jpeg'>
             <img id='wallTextures1' src='assets/marbleImage1.jpeg'>
@@ -24,13 +19,55 @@
             <img id='wallTextures3' src='assets/marbleImage3.jpeg'>
             <img id='wallTextures4' src='assets/marbleImage4.jpeg'>
             <img id='wallTextures5' src='assets/marbleImage5.jpeg'>
-            <video id="movie" autoplay loop="true" src="assets/test.mov"></video>
-            <!-- <img id='movie' src='assets/test.mov'> -->
+
+            <!-- 3D Flourish -->
+            <a-asset-item id="chairObj" src="assets/3D/odesd2_B1_obj.obj"></a-asset-item>
+            <a-asset-item id="chairMtl" src="assets/3D/odesd2_B1_obj.mtl"></a-asset-item>
+            <a-asset-item id="lightObj" src="assets/3D/wallLamp.obj"></a-asset-item>
+            <a-asset-item id="lightMat2" src="assets/3D/wallLamp.mtl"></a-asset-item>
+            <a-asset-item id="lightPanelObj" src="assets/3D/lightPanel.obj"></a-asset-item>
+            <a-asset-item id="lightPanelMat" src="assets/3D/lightPanel.mtl"></a-asset-item>
+
+            <!-- room 1 -->
+            <!-- <video id="movie" autoplay loop="true" src="assets/test.mov"></video> -->
+            <video id='brian1' autoplay loop='true' src='assets/week1/BrianWk1.mov'></video>
+            <video id='lu1' autoplay loop='true' src='assets/week1/LuWk1.mov'></video>
+            <video id='yutian1' autoplay loop='true' src='assets/week1/YutianWk1.mov'></video>
+            <video id='chumou1' autoplay loop='true' src='assets/week1/ChumouWk1.mov'></video>
+            <video id='danni1' autoplay loop='true' src='assets/week1/DanniWk1.mov'></video>
+            <video id='paul1' autoplay loop='true' src='assets/week1/PaulWk1.mov'></video>
+            <video id='jesse1' autoplay loop='true' src='assets/week1/JesseWk1.mov'></video>
+            <video id='amanda1' autoplay loop='true' src='assets/week1/AmandaWk1.mov'></video>
+            <video id='reeca1' autoplay loop='true' src='assets/week1/ReecaWk1.mov'></video>
+            <video id='shu1' autoplay loop='true' src='assets/week1/shuWk1.mov'></video>
+            <video id='alice1' autoplay loop='true' src='assets/week1/AliceWk1.mov'></video>
+            <video id='jackie1' autoplay loop='true' src='assetsweek1/JackieWk1.mov'></video>
+            <video id='erin1' autoplay loop='true' src='assets/week1/ErinWk1.mov'></video>
+            <video id='marco1' autoplay loop='true' src='assets/week1/MarcoWk1.mov'></video>
+            <video id='fangling1' autoplay loop='true' src='assets/week1/FanglingWk1.mov'></video>
+
+            <!-- room 2 -->
+            <video id='brian2' autoplay loop='true' src='assets/week2/BrianWk2.mov'></video>
+            <video id='lu2' autoplay loop='true' src='assets/week2/LuWk2.mov'></video>
+            <video id='yutian2' autoplay loop='true' src='assets/week2/YutianWk2.mov'></video>
+            <video id='chumou2' autoplay loop='true' src='assets/week2/ChumouWk2.mov'></video>
+            <video id='danni2' autoplay loop='true' src='assets/week2/DanniWk2.mov'></video>
+            <video id='paul2' autoplay loop='true' src='assets/week2/PaulWk2.mov'></video>
+            <video id='jesse2' autoplay loop='true' src='assets/week2/JesseWk2.mov'></video>
+            <video id='amanda2' autoplay loop='true' src='assets/week2/AmandaWk2.mov'></video>
+            <video id='reeca2' autoplay loop='true' src='assets/week2/ReecaWk2.mov'></video>
+            <video id='shu2' autoplay loop='true' src='assets/week2/shuWk2.mov'></video>
+            <video id='alice2' autoplay loop='true' src='assets/week2/AliceWk2.mov'></video>
+            <video id='jackie2' autoplay loop='true' src='assets/week2/JackieWk2.mov'></video>
+            <video id='erin2' autoplay loop='true' src='assets/week2/ErinWk2.mov'></video>
+            <video id='marco2' autoplay loop='true' src='assets/week2/MarcoWk2.mov'></video>
+            <video id='fangling2' autoplay loop='true' src='assets/week2/FanglingWk2.mov'></video>
+
+           
         </a-asset>
 
         <!-- Ceiling -->
         <a-plane src="#wallTextures1" repeat="5 4" height="40" width="30" position="0 4 2.83" rotation="90 0 0" material="" geometry="height: 90; width: 90"></a-plane>
-        <!-- <a-plane src="#wallTextures1" repeat='5 4' height="40" width="30" position='0 4 -20' rotation='90 0 0'></a-plane> -->
 
         <!-- Floor -->
         <a-plane src="#woodFloorTextures" repeat='10 20' height="120" width="30" position='0 0 6.233' rotation='-90 0 0'></a-plane>
@@ -56,6 +93,23 @@
         <a-box static-body id="rightSideWall9" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="11.3223 2 -34.16245" rotation="0 135 0" material="" geometry=""></a-box>
         <a-box static-body id="leftSideWall8" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-7.43903 2 -38.04585" rotation="0 45 0" material="" geometry=""></a-box>
         <a-box static-body id="leftSideWall9" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-11.3223 2 -34.16245" rotation="0 45 0" material="" geometry=""></a-box>
+
+        <!-- <a-video src="#brian1" width="3" height="3" material="" geometry="" position="-9.10517 2 -35.34058" rotation="0 45 0"></a-video>
+        <a-video src="#lu1" width="3" height="3" material="" geometry="" position="-12.49 2 -26.77037" rotation="0 90 0"></a-video>
+        <a-video src="#paul1" width="3" height="3" material="" geometry="" position="12.60153 2 -26.55141" rotation="0 90 0"></a-video>
+        <a-video src="#jesse1" width="3" height="3" material="" geometry="" position="9.1653 2 -17.8463" rotation="0 -135 0"></a-video>
+        <a-video src="#chumou1" width="3" height="3" material="" geometry="" position="9.18689 2 -35.55105" rotation="0 -45 0"></a-video>
+        <a-video src="#amanda1" width="3" height="3" material="" geometry="" position="-8.95513 2 -18.07236" rotation="0 135 0"></a-video>
+        <a-video src="#yutian1" width="3" height="3" material="" geometry="" position="-2.43 2 -39.27"></a-video>
+        <a-video src="#shu1" width="3" height="3" material="" geometry="" position="2.43553 2 -39.37733"></a-video>
+        <a-video src="#danni1" width="3" height="3" material="" geometry="" position="-4.82002 2 -10.87" rotation="0 90 0"></a-video>
+        <a-video src="#reeca1" width="3" height="3" material="" geometry="" position="4.82381 2 -10.87" 9="" rotation="0 90 0"></a-video> -->
+        <a-obj-model src="#chairObj" mtl="#chairMtl" scale="0.015 0.015 0.015" position="0.16125 0 -32.48" rotation="-90 0 0" material="" obj-model=""></a-obj-model>
+        <a-obj-model src="#chairObj" mtl="#chairMtl" scale="0.015 0.015 0.015" position="-5.94006 0 -22" rotation="-90 -45 0" material="" obj-model=""></a-obj-model>
+        <a-obj-model src="#chairObj" mtl="#chairMtl" scale="0.015 0.015 0.015" position="6.63932 0 -22" rotation="-90 45 0" material="" obj-model=""></a-obj-model>
+        <!-- <a-obj-model src="#lightObj" mtl="#lightMat2" scale="0.5 0.5 0.5" position="0 2 -10" rotation="-90 0 0"></a-obj-model> -->
+        <!-- <a-obj-model src="#lightPanelObj" mtl="#lightPanelMat" scale="1 1 1" position="0 2 -10" rotation="0 0 0"></a-obj-model> -->
+        
 
         <!-- Octagon Hall 2 -->
         <a-box static-body id="leftSideWall1Straight" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-5.5 2 16.5" rotation="0 90 0" material="" geometry=""></a-box>
@@ -88,7 +142,6 @@
         <a-box static-body="" id="3leftSideWall5" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-41.06198 2 10.18496" rotation="0 -45 0" material="" geometry=""></a-box>
         <a-box static-body="" id="3rightSideWall5" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-41.06198 2 -4.69721" rotation="0 45 0" material="" geometry=""></a-box>
         <a-box static-body="" id="3leftSideWall7" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-26.995 2 16.01082" rotation="" material="" geometry=""></a-box>
-        <a-box static-body="" id="3rightSideWall7" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="13.25489 2 35.25082" rotation="0 0 0" material="" geometry=""></a-box>
         <a-box static-body="" id="3LeftSideWall72" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-13.7664 2 -2.77784" rotation="" material="" geometry=""></a-box>
         <a-box static-body="" id="3LeftSideWall73" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-8.2664 2 -2.77784" rotation="" material="" geometry=""></a-box>
         <a-box static-body="" id="3leftSideWall8" src="#wallTextures1" height="4" width="5.5" depth="0.04" position="-22.31806 2 14.07189" rotation="0 -135 0" material="" geometry=""></a-box>
@@ -128,17 +181,42 @@
         ></a-entity> -->
         <!-- <a-cursor position="0 0 -.05" scale=".04 .04 1"></a-cursor> -->
         <!-- <a-video src="#myvideo" width="3" height="1.5"></a-video> -->
-        <a-video src="#movie" width="3" height="3" material="" geometry="" position="0 2 -39.27"></a-video>
         <!-- <a-entity websurface="url: https://editor.p5js.org/w1tness/sketches/3WMa8_t0G; width: 4; height: 2" position="-0.02898 1.5 -39.28796" geometry="primitive: plane; width: 4; height: 2"></a-entity> -->
-        <!-- Lighting: -->
+
+        <!-- Lighting:R1 -->
         <a-entity light="type: ambient; color: #CCC; intensity: 0.6"></a-entity>
-        <a-entity light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5; castShadow: true" position="0 4.5302 -39.60476" rotation="-90 0 0" scale="-1.3 -0.82 0.00001"></a-entity>
-        <a-entity light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5; castShadow: true" position="9.10689 4.60418 -35.75962" rotation="-90 45 0" scale="-1.3 -0.82 0.00001"></a-entity>
-        <a-entity light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5; castShadow: true" position="12.78323 4.5302 -26.699" rotation="-90 0 0" scale="-1.3 -0.82 0.00001"></a-entity>        
-        <a-entity light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5; castShadow: true" position="8.90636 4.588 -17.79848" rotation="-90 0 0" scale="-1.3 -0.82 0.00001"></a-entity>
-        <a-entity light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5; castShadow: true" position="-8.90636 4.588 -17.79848" rotation="-90 0 0" scale="-1.3 -0.82 0.00001"></a-entity>
-        <a-entity light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5; castShadow: true" position="-9.10689 4.60418 -35.75962" rotation="-90 45 0" scale="-1.3 -0.82 0.00001"></a-entity>
-        <a-entity light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5; castShadow: true" position="-12.78323 4.5302 -26.699" rotation="-90 0 0" scale="-1.3 -0.82 0.00001"></a-entity>        
+        <a-entity light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5;" position="0 4.5302 -39.60476" rotation="-90 0 0" scale="-1.3 -0.82 0.00001"></a-entity>
+        <a-entity light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5;" position="9.10689 4.60418 -35.75962" rotation="-90 45 0" scale="-1.3 -0.82 0.00001"></a-entity>
+        <a-entity light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5;" position="12.78323 4.5302 -26.699" rotation="-90 0 0" scale="-1.3 -0.82 0.00001"></a-entity>        
+        <a-entity light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5;" position="8.90636 4.588 -17.79848" rotation="-90 0 0" scale="-1.3 -0.82 0.00001"></a-entity>
+        <a-entity light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5;" position="-8.90636 4.588 -17.79848" rotation="-90 0 0" scale="-1.3 -0.82 0.00001"></a-entity>
+        <a-entity light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5;" position="-9.10689 4.60418 -35.75962" rotation="-90 45 0" scale="-1.3 -0.82 0.00001"></a-entity>
+        <a-entity light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5;" position="-12.78323 4.5302 -26.699" rotation="-90 0 0" scale="-1.3 -0.82 0.00001"></a-entity>        
+        
+        <!-- Lighting:R2 -->
+        <a-entity class="2" light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5;" position="0.00135 4.85355 44.8497" rotation="-90 0 0" scale="-1.3 -0.82 0.00001"></a-entity>
+        <a-entity class="2" light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5;" position="8.67121 5.25428 40.96729" rotation="-90 45 0" scale="-1.3 -0.82 0.00001"></a-entity>
+        <a-entity class="2" light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5;" position="12.64018 4.7504 32.41632" rotation="-90 0 0" scale="-1.3 -0.82 0.00001"></a-entity>
+        <a-entity class="2" light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5;" position="8.7632 5.63625 23.99872" rotation="-90 0 0" scale="-1.3 -0.82 0.00001"></a-entity>
+        <a-entity class="2" light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5;" position="-8.76644 5.78034 24.43252" rotation="-90 0 0" scale="-1.3 -0.82 0.00001"></a-entity>
+        <a-entity class="2" light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5;" position="-9.23788 4.60418 41.11004" rotation="-90 45 0" scale="-1.3 -0.82 0.00001"></a-entity>
+        <a-entity class="2" light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5;" position="-11.9795 5.52833 32.52403" rotation="-90 0 0" scale="-1.3 -0.82 0.00001"></a-entity>
+
+        <!-- Lighting:R3 -->
+        <a-entity class="3" light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5" position="41.68156 4.85355 2.92933" rotation="-90 0 0" scale="-1.3 -0.82 0.00001"></a-entity>
+        <a-entity class="3" light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5" position="38.44279 5.25428 -5.4326" rotation="-90 45 0" scale="-1.3 -0.82 0.00001"></a-entity>
+        <a-entity class="3" light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5" position="29.7672 4.7504 -9.5709" rotation="-90 0 0" scale="-1.3 -0.82 0.00001"></a-entity>
+        <a-entity class="3" light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5" position="21.07324 5.63625 -6.42196" rotation="-90 0 0" scale="-1.3 -0.82 0.00001"></a-entity>
+        <a-entity class="3" light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5" position="21.80797 5.78034 11.19451" rotation="-90 0 0" scale="-1.3 -0.82 0.00001"></a-entity>
+        <a-entity class="3" light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5" position="38.50647 5.52402 11.11041" rotation="-90 45 0" scale="-1.3 -0.82 0.00001"></a-entity>
+        <a-entity class="3" light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5" position="30.03522 5.52833 14.40533" rotation="-90 0 0" scale="-1.3 -0.82 0.00001"></a-entity> 
+        <a-entity class="3" light="type: spot; angle: 45; decay: 90; penumbra: 1; intensity: 1.5; castShadow: true" position="0.16681 4.5302 44.8497" rotation="-90 0 0" scale="-1.3 -0.82 0.00001"></a-entity>
+
+
+
+        <!-- experimenting with lighting -->
+        <a-entity geometry="primitive: octahedron" material="color: red"
+          light="type: point; intensity: 2.0">
     </a-scene>
 </body>
 </html>
