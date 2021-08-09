@@ -1,0 +1,5 @@
+newmtl defaultMat_0_0
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+d 1.000000
+map_Kd Zanthoxylum-Texture-8k.jpg
